@@ -30,6 +30,8 @@ layout_ans1.addLayout(layout_ans2)
 layout_ans1.addLayout(layout_ans3)
 RadioGroupBox.setLayout(layout_ans1)
 
+
+
 AnsGroupBox = QGroupBox("Test result")
 lb_Result = QLabel('are you correct or not?')
 lb_Correct = QLabel('the answer will be here!')
@@ -96,6 +98,7 @@ def show_correct(res):
     ''' show result - put the written text into "result" and show the corresponding panel '''
     lb_Result.setText(res)
     show_result()
+
 def check_answer():
     ''' if an answer option was selected, check and show answer panel '''
     if answers[0].isChecked():
